@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Water Consumption Calculator</title>
+    <style>
+      body {
+		font-family: Arial, sans-serif;
+        background-color: #e3f2fd;
+        animation: wave 20s linear infinite alternate;
+        transform-origin: center bottom;
+        background-image: url('https://wallpaperaccess.com/full/660523.jpg');
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        background-color: #e3f2fd;
+        animation: wave 20s linear infinite alternate;
+        transform-origin: center bottom;
+      }
+
+      @keyframes wave {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(-1deg);
+        }
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgb(76, 90, 94,0.7);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 2356);
+		color: #f3f5f6;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      input[type="number"] {
+        width: 100px;
+        padding: 5px;
+        margin-right: 10px;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #0b86e4;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+
+      button:hover {
+        background-color: #111110;
+      }
+	  form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+      #result {
+        margin-top: 20px;
+        font-size: 24px;
+      }
+	  
+    </style>
+    <script>
+      function calculate() {
+        var numPeople = document.getElementById("numPeople").value;
+        var numLiters = document.getElementById("numLiters").value;
+        var totalLiters = numPeople * numLiters;
+        var totalGallons = totalLiters * 0.264172052;
+        document.getElementById("result").innerHTML =
+          "Your household consumes " +
+          totalLiters +
+          " liters of water per day, which is equivalent to " +
+          totalGallons.toFixed(2) +
+          " gallons per day.";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Water Consumption Calculator</h1>
+      <p>Enter the number of people in your household and the number of liters of water you consume per day:</p>
+      <form>
+        <label for="numPeople">Number of people:</label>
+        <input type="number" id="numPeople" name="numPeople" min="1" max="10" value="1" required>
+        <label for="numLiters">Liters per day:</label>
+        <input type="number" id="numLiters" name="numLiters" min="1" max="100" value="1" required>
+        <button type="button" onclick="calculate()">Calculate</button>
+      </form>
+      <div id="result"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Water Consumption Calculator</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			text-align: center;
+		}
+
+		form {
+			display: inline-block;
+			text-align: left;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		input[type="number"] {
+			padding: 5px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			margin-bottom: 10px;
+		}
+
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+
+		.result {
+			font-size: 20px;
+			margin-top: 20px;
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+		}
+	</style>
+</head>
+<body>
+	<h1>Water Consumption Calculator</h1>
+	<form onsubmit="calculateWaterConsumption(event)">
+		<label for="numPeople">Number of people:</label>
+		<input type="number" id="numPeople" name="numPeople" min="1" required>
+
+		<label for="numDays">Number of days:</label>
+		<input type="number" id="numDays" name="numDays" min="1" required>
+
+		<label for="numLitersPerDay">Liters per person per day:</label>
+		<input type="number" id="numLitersPerDay" name="numLitersPerDay" min="1" required>
+
+		<input type="submit" value="Calculate">
+
+		<div class="result" id="result"></div>
+	</form>
+
+	<script>
+		function calculateWaterConsumption(event) {
+			event.preventDefault();
+
+			const numPeople = document.getElementById("numPeople").value;
+			const numDays = document.getElementById("numDays").value;
+			const numLitersPerDay = document.getElementById("numLitersPerDay").value;
+
+			const totalLiters = numPeople * numDays * numLitersPerDay;
+			const resultElement = document.getElementById("result");
+			resultElement.innerHTML = `Total water consumption: ${totalLiters} liters`;
+		}
+	</script>
+</body>
+</html>

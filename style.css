@@ -1,0 +1,391 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    font-weight: bold;
+    background-color: #333333;
+  }
+  
+  header {
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #333333;
+    color: rgb(246, 198, 5);
+    /* text-align: center; */
+    padding: 10px;
+    display: flex;
+  }
+
+#watercris{
+  color:rgb(241, 195, 9) ;
+  font-weight: 700;
+}
+
+  span{
+    color:rgb(241, 195, 9);
+  }
+  #logo{
+    border: 2px solid rgb(248, 175, 4);
+    border-radius: 15px;
+  }
+  #logo-hea{
+    padding-left: 10px;
+    padding-top: 18px;
+  }
+  h2{
+    text-decoration: underline;
+    
+
+  }
+  #avail{
+    text-align: center;
+  }
+  
+  nav {
+    background-color:#f4b109;
+    border: 1px solid #e24b4b;
+    padding: 10px;
+    
+  }
+  #p{
+    color: #0a0a0a;
+    background-color:#d8a01e ;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav li {
+    float: left;
+    padding: 0px 70px;
+    
+  }
+  #home{
+    padding-left: 300px;
+  }
+  nav li a {
+    display: block;
+    color: #0b0a0a;
+    text-align: center;
+    padding: 10px;
+    text-decoration: underline;
+    
+  }
+  
+  nav li a:hover {
+    background-color: #f6f2f2fa;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  form {
+    display: inline-block;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  h2{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    border: 1px solid #f0aa06;
+  }
+  
+  input[type="submit"] {
+    background-color: #f4b109;
+    color: rgb(23, 22, 22);
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.7cm;
+  }
+  .txt{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 40px;
+
+  }
+  #p{
+    text-align: justify;
+  }
+  #lesswater{
+    padding-left: 100px;
+    padding-right: 100px;
+
+  }
+  #water-uni{
+    display: inline-flex;
+  }
+  #watercris-sec{
+    display: inline-flex;
+
+  }
+ .conservation-div{
+  border: 2px solid rgb(244, 237, 237);
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px 4px  rgb(244, 213, 7);
+  background-color: white;
+ }
+ #myBtn{
+  cursor: pointer;
+  margin: 10px;
+  margin-left: 20px;
+  border: 1px solid rgb(244, 243, 240);
+  border-radius: 10px;
+  background-color: rgb(246, 222, 6);
+
+ }
+ #more{
+  color: rgb(10, 10, 10);
+ }
+  .watercris-div{
+   cursor: pointer;
+    height: auto;
+    width: 365px;
+    margin: 30px 14px;
+    justify-content: space-between;
+    border: 2px solid rgb(243, 231, 6);
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px 4px  rgb(247, 190, 2);
+    background-color: #d8a01e;
+  }
+  .watercris-div img{
+    border: 1px solid rgb(216, 187, 26);
+    border-radius: 10px;
+  }
+  #p{
+    padding: 20px;
+  }
+div iframe{
+  margin-left: 220px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+  .text-small{
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0px 25px;
+    text-align: justify;
+    color: #100f0f;
+
+  }
+  .conservation-div{
+    background-color:#d8a01e ;
+  }
+  #raj{
+    color:#f0aa06;
+  }
+  #waterchart{
+    color:#f0aa06;
+    background-color:#efa908 ;
+  }
+  #pk{
+    color:#f0aa06;
+
+  }
+  #power{
+    color: #f6af09;
+  }
+  footer {
+    
+    background-color: rgb(48, 46, 46);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    color: #f7ae06;
+  }
+  #last{
+    background-color: #f0aa06;
+    border-radius: 1cm;
+    box-sizing: content-box;
+  }
+  #contact{
+    color:#f0aa06;
+  }
+  #pkk{
+    color:#f0aa06;
+  }
+  #tk{
+    color: #f0aa06;
+  }
+  .testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #efa908;
+  }
+  
+  .testimonial {
+    display: flex;
+    align-items: center;
+    width: 33.33%;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .testimonial p {
+    margin-bottom: 5px;
+  }
+  
+  .testimonial h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .testimonial p:last-child {
+    font-style: italic;
+  }
+  #team{
+    color:#d8a01e ;
+    text-align: center;
+    text-decoration: underline;
+  }
+#calculate{
+  text-align: center;
+}
+  #pl{
+    border-image: url(img/img1.jpg) 30 round;
+  }
+  .image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .image-container img {
+    width: 30%;
+    height: auto;
+    margin-right: 10px;
+  }
+.water-uni{
+  width: 90%;
+
+}  
+  
+
+
+.image-container .free{
+  height: 63vh;
+} 
+#ad{
+  text-align: center;
+}
+.site-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.social-media-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-media-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-media-links i {
+  font-size: 20px;
+}
+footer {
+  background-color: #353535;
+  color: #f3971b;
+  font-size: 1.2em;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-media a {
+  color: #f3971b;
+  margin: 0 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-media a:hover {
+  color: white;
+  transform: translateY(-3px);
+}
+
+.back-to-top a {
+  color: #f3971b;
+  display: inline-block;
+  margin-top: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.back-to-top a:hover {
+  color: white;
+  transform: translateY(-3px);
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+/* Animation styles */
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.social-media a,
+.back-to-top a {
+  animation: slide-in 0.5s ease-in-out;
+  animation-fill-mode: both;
+}
+
+/* Link behavior */
+.social-media a[target="_blank"], 
+.back-to-top a[target="_blank"] {
+  pointer-events: none;
+  cursor: default;
+}
+
+.social-media a[target="_blank"]::after, 
+.back-to-top a[target="_blank"]::after {
+  content: " (opens in new tab)";
+  font-size: 0.8em;
+  color: #ccc;
+  margin-left: 3px;
+}
+
+.social-media a:not([target="_blank"]):hover, 
+.back-to-top a:not([target="_blank"]):hover {
+  color: white;
+  transform: translateY(-3px);
+}
+
+.social-media a:not([target="_blank"]):active, 
+.back-to-top a:not([target="_blank"]):active {
+  color: white;
+  transform: translateY(-1px);
+}
